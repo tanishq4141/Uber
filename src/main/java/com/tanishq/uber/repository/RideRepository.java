@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RideRepository extends MongoRepository<Ride, String> {
+  java.util.List<Ride> findByStatus(String status);
 }
